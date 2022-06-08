@@ -5,12 +5,81 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sneakers</title>
-
+    
     <!-- STYLES -->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+    <!-- SITE-HEADER -->
+    <header class="site-header">
+        <div class="site-header__container container">
+            <a class="site-header__logo" href="index.html">
+                <img class="site-header__logo--img" src="img/logo.svg" alt="logo" width="137" height="20">
+            </a>
+            <!-- SITENAV -->
+            <nav class="sitenav">
+                <ul class="sitenav__list">
+                    <li class="sitenav__iteam"><a class="sitenav__link" href="#">Collections</a></li>
+                    <li class="sitenav__iteam"><a class="sitenav__link" href="#">Men</a></li>
+                    <li class="sitenav__iteam"><a class="sitenav__link" href="#">Women</a></li>
+                    <li class="sitenav__iteam"><a class="sitenav__link" href="#">About</a></li>
+                    <li class="sitenav__iteam"><a class="sitenav__link" href="#">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <div class="site-header__link-wrapper">
+                <a class="site-header__link" href="#">
+                    <svg width="22" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3.863 3.641h17.062c.583 0 1.01.55.87 1.114l-1.822 7.283a.896.896 0 0 1-.817.677l-14.321.842c.256.598.849 1.01 1.53 1.01h10.008a2.72 2.72 0 0 1 2.717 2.716A2.72 2.72 0 0 1 16.373 20c-1.878 0-3.197-1.872-2.555-3.642H8.913C9.556 18.13 8.233 20 6.358 20 4.1 20 2.83 17.385 4.22 15.611c-.77-.61-1.218-1.508-1.29-2.336L1.95 2.366v.001c.072.796.169 1.876-.051-.575H.896A.896.896 0 0 1 .896 0h1.82c.465 0 .852.354.894.816l.253 2.825Zm1.57 13.642a.926.926 0 0 0 1.85 0 .926.926 0 0 0-1.85 0Zm10.94.925a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm-11.78-6.432 13.801-.811 1.383-5.531H4.024l.57 6.342Z" fill="currentColor"/></svg>
+                </a>
+                <a class="site-header__img" href="#">
+                    <img class="site-header__photo" src="img/boy.png" alt="boy" width="50" height="50" srcset="img/boy.png 1x, img/boy@x.png 2x">
+                </a>
+            </div>
+        </div>
+    </header>
     
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+        <div class="container-add">
+            <section class="sneakers-data">
+                <div class="sneakers-data__wrapper">
+                    <div class="sneakers-data__img-wrapper">
+                        <img class="sneakers__img" src="img/img1.jpg" alt="Sneakers" width="445" height="445" srcset="img/img1.jpg 1x, img/img1@2x.jpg 2x">
+                        <div class="sneakers-data__images">
+                            <img class="sneakers-data__photos" src="img/img1.jpg" alt="Sneakers" width="88" height="88" srcset="img/img1.jpg 1x, img/img1@2x.jpg 2x">
+                            <img class="sneakers-data__photos" src="img/img2.jpg" alt="Sneakers" width="88" height="88" srcset="img/img2.jpg 1x, img/img2@2x.jpg 2x">
+                            <img class="sneakers-data__photos" src="img/img3.jpg" alt="Sneakers" width="88" height="88" srcset="img/img3.jpg 1x, img/img3@2x.jpg 2x">
+                            <img class="sneakers-data__photos" src="img/img4.jpg" alt="Sneakers" width="88" height="88" srcset="img/img4.jpg 1x, img/img4@2x.jpg 2x">
+                        </div>
+                    </div>
+                    <div class="sneakers-data__list">
+                        <h1 class="sneakers-data__info">
+                            <span class="sneakers-data__title">Sneaker Company</span>
+                            <span class="sneakers-data__heading">Fall Limited Edition Sneakers</span>
+                        </h1>
+                        <p class="sneakers-data__text">These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+                        <span class="sneakers-data__numbers">
+                            <span class="sneakers-data-number">$125.00</span>
+                            <span class="sneakers-data-percent">50%</span>
+                        </span>
+                        <span class="sneakers-data__currency">$250.00</span>
+                        <div class="sneakers-data__counting">
+                            <div class="sneakers-data counting">
+                                <button class="counting__split">-</button>
+                                <span class="caunting-number">0</span>
+                                <button class="caunting-add">+</button>
+                            </div>
+                            <a href="#" class="sneakers-data__links">
+                                <img class="sneakers-data__basket" src="img/basket.svg" alt="Basket" width="17" height="16">
+                                <h2 class="sneakers-data__link">Add to cart</h2>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <script src="js/app.js"></script>
 </body>
 </html>
