@@ -265,7 +265,11 @@ img {
 }
 
 .shopping-cart--empty .shopping-cart__info {
-    /* display: none; */
+display: none;
+}
+
+.shopping-cart--empty .shopping-cart__content {
+    display: none;
 }
 
 .shopping-cart__info{
@@ -278,7 +282,6 @@ img {
     line-height: 26px;
     color: var(--color-text);
 }
-
 
 .site-header__img {
     display: flex;
@@ -429,6 +432,7 @@ img {
     text-decoration: line-through;
     margin-bottom: 32px;
 }
+
 .sneakers-data__counting {
     display: flex;
     align-items: center;
@@ -502,4 +506,58 @@ img {
     font-size: 16px;
     line-height: 20px;
     margin: 0;
+}
+
+.shopping-cart__list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    margin-bottom: 24px;
+}
+
+.shoppin-cart__iteam:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+.item-cart__shopping {
+    display: flex;
+    align-items: center;
+}
+
+.item-cart__shopping-img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-right: 16px;
+}
+
+.shopping-info {
+    display: flex;
+    flex-direction: column;
+    margin-right: 18px;
+}
+
+.shopping-info__title {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.shopping-info__number {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.black-number {
+    color: #000;
+}
+
+.shopping-cart__button {
+    display: flex;
+    border: none;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
 }
